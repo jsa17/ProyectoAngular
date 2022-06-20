@@ -3,8 +3,19 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+   firebaseConfig :{
+    apiKey: "AIzaSyCf_BKKWdOHfbBCYFhkx9lon4WwJsZQqbM",
+    authDomain: "bordado-25abc.firebaseapp.com",
+    projectId: "bordado-25abc",
+    storageBucket: "bordado-25abc.appspot.com",
+    messagingSenderId: "966711632347",
+    appId: "1:966711632347:web:f7f039096e684f14c507fe",
+    measurementId: "G-KV4TBCMWLV"
+  }
+  
 };
+
 
 /*
  * For easier debugging in development mode, you can import the following file

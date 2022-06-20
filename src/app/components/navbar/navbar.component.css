@@ -1,0 +1,19 @@
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.nav-link{
+    color: rgb(89, 0, 255) !important;
+    cursor: pointer;
+    height: 50px;
+    width: 30px;
+}
+
+.navbar {
+    top: 0;
+    margin: 30px;
+    height: 50px;
+    background-color: white;
+   
+}

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { hilos } from '../../hilos';
 
 @Component({
   selector: 'app-hilos',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HilosComponent implements OnInit {
 
+  hilos = hilos;
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  agregarCarrito(){
+    
+  }
 }

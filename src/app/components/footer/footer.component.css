@@ -1,0 +1,133 @@
+li{
+    list-style: none;
+    color: grey;
+    
+}
+
+h5{
+    padding-left: 20px;
+    color: grey;
+}
+
+a:link{
+color:grey;
+text-decoration: none;
+}
+
+a:hover{
+    font-size: 1.1rem;
+}
+
+a:active{
+    color: darkgrey;
+}
+
+footer{
+    background:grey;
+    padding:60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+
+}
+
+.content-foo h4{
+    color: white;
+    border-bottom: 3px solid olivedrab;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: white;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color:hsla(56, 100%, 95%, 0.678)
+}
+
+/*BOTONES DE REDES SOCIALES*/
+:root{
+    --facebook: #3b5999;
+    --instagram: #e4405f;
+    --twitter: #55acee;
+    --pinterest: #bd081c;
+    --linkedin: #0077b5;
+}
+
+.redes-container{
+    display: flex;
+    height: 25vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes-container ul li{
+    display: inline-block;
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.redes-container ul li a{
+    display: block;
+    padding: 0 10px;
+    background: gray;
+    color: white;
+    line-height: 50px;
+    font-size: 18px;
+    box-shadow: 0 3px 5px 0 rgba(86, 76, 76, 0.408);
+    transition: .2s;
+}
+
+.redes-container ul:hover a{
+    filter: blur(2px);
+}
+
+.redes-container ul li a:hover{
+    transform: translateX(-3px) scale(1.5);
+    box-shadow: 0 3px 5px 0 rgba(46, 46, 46, 0.4);
+    filter: none;
+}
+
+.redes-container ul li .facebook:hover{
+    background: var(--facebook);
+}
+
+.redes-container ul li .instagram:hover{
+    background: var(--instagram);
+}
+
+.redes-container ul li .twitter:hover{
+    background: var(--twitter);
+}
+
+.redes-container ul li .pinterest:hover{
+    background: var(--pinterest);
+}
+
+.redes-container ul li .linkedin:hover{
+    background: var(--linkedin);
+}
+
+.redes-container{
+    flex-direction: column;
+    justify-content: center;
+    
+}

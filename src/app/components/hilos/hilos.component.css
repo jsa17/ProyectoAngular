@@ -1,0 +1,12 @@
+button{
+    background-color: rgb(241, 158, 176);
+    color: #fff;
+    border-radius: 5px;
+    border-color: rgb(241, 158, 176);
+    text-decoration: none;
+}
+
+.hilos{
+    float: left;
+    padding: 10px;
+}

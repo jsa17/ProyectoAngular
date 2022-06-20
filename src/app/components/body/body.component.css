@@ -1,0 +1,19 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.icono{
+    align-content: center;
+}
+
+#search{
+    width: 400px;
+    height: 40px;
+}
