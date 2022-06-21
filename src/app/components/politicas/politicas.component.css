@@ -1,0 +1,28 @@
+h2{
+    color: grey;
+    text-align: center;
+    margin: 100px;
+}
+
+h4{
+    color: grey;
+    margin: 40px;
+    text-align: center;
+}
+
+p{
+    color: grey;
+    text-align: justify;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+ul{
+    color: grey;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-left: 400px;
+    margin-right: 100px;
+}

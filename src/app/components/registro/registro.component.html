@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="card text-center">
+        <div class="card-header">
+          <h3>Registro</h3>
+        </div>
+        <div class="card-body p-4">
+            <input class="form-control m-2" type="text" placeholder="correo electrónico" [(ngModel)]="usuario.email">
+
+            <input class="form-control m-2" type="password" placeholder="contraseña" [(ngModel)]="usuario.password"><br>
+
+            <button class="btn btn-secondary m-2" (click)="registrarse()">Registrarse</button><br>
+            
+            <label>Ya tienes cuenta?<a routerLink="/login">Ingresar</a></label>
+           
+        </div>
+    </div>
+</div>

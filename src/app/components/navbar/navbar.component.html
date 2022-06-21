@@ -1,15 +1,23 @@
-<nav class="nav nav-pills nav-fill">
-        <a class="navbar-brand" href="#">
-          <img src="/assets/icono.png" alt="" width="50" height="50" class="d-inline-block align-text-top">
-        </a>
-    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-    <a class="nav-link" [routerLink]="['historia']">Historia</a>
-    <a class="nav-link" [routerLink]="['hilos']">Tipos de hilos</a>
-    <a class="nav-link" [routerLink]="['tecnica']">Técnicas</a>
-    <a class="nav-link" [routerLink]="['accesorios']">Accesorios</a>
-    <a class="nav-link" [routerLink]="['puntos']">Puntos</a>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-</nav>
+  <nav class="navbar navbar-light bg-light" >
+    <div class="container-fluid">
+            <a class="nav-link" [routerLink]="['home']">Home</a>
+            <a class="nav-link" [routerLink]="['hilos']">Hilos</a>
+            <a class="nav-link" [routerLink]="['tecnica']">Técnicas</a>
+            <a class="nav-link" [routerLink]="['formulario']">Contacto</a>
+            <a class="nav-link" [routerLink]="['carrito']"><img height="27px" width="27px" src="./assets/carro.png"></a>
+
+        <ng-template #btnIngresar>
+              <a class="nav-link" [routerLink]="['login']"><img height="27px" width="27px" src="./assets/login2.png"></a>
+        </ng-template>
+            
+    <div ngbDropdown class="d-inline-block"  *ngIf="userLogged|async as user; else btnIngresar">
+            <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
+              <img style="border-radius: 100%;" width="30px" height="30px" *ngIf="user.photoURL" src="{{user.photoURL}}">
+              {{user.displayName?user.displayName : user.email}}
+            </button>
+            <div ngbDropdownMenu aria-labelledby="dropdownMenuButton1">
+              <button ngbDropdownItem (click)="logout()">Salir</button>
+            </div>
+    </div>
+    </div>
+  </nav>

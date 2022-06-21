@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 50vh;
+}
+
+h3{
+    color: grey;
+}
+
+.btn-google{
+    background-color: #FFFFFF;
+    padding-left: 8dp;
+    padding-right: 8dp;
+    border: 1px solid rgb(244, 229, 229);
+    color: grey;
+}
